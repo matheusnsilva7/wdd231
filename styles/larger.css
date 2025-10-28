@@ -27,7 +27,7 @@
     display: block;
   }
 
-  .about.grid {
+  .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 16px;
@@ -36,6 +36,7 @@
 
   h1 {
     font-size: 2rem;
+    grid-column: span 2;
   }
 
   .courses-list {
@@ -44,8 +45,11 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .course-item{
+  .courses.card {
+    grid-column: span 2;
+  }
+
+  .course-item {
     min-width: 30rem;
   }
 

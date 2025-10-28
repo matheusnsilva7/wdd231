@@ -1,7 +1,7 @@
 :root {
   --bg: #f7f7f7;
   --card: #e6e6e6;
-  --accent: #1E40AF;
+  --accent: #1e40af;
   --text: #222;
   --muted: #555;
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -101,8 +101,8 @@ body {
   color: #fff;
   border-radius: 6px;
 }
-.site-nav ul li a:hover{
-  background-color:var(--accent) ;
+.site-nav ul li a:hover {
+  background-color: var(--accent);
 }
 .site-nav a.active {
   background: var(--accent);
@@ -140,9 +140,11 @@ h2 {
 
 .photo img {
   width: 100%;
+  max-width: 300px;
   height: auto;
   display: block;
   border-radius: 6px;
+  margin: 0 auto;
 }
 
 .filter-row {
@@ -193,7 +195,7 @@ h2 {
   display: inline-block;
   margin: 0 6px;
   text-decoration: none;
-  width:2rem
+  width: 2rem;
 }
 .open {
   display: block;
