@@ -1,0 +1,58 @@
+@media (min-width: 48rem) {
+  body {
+    padding: 18px;
+  }
+  .site-nav {
+    display: block;
+  }
+  .header-inner {
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .site-nav {
+    order: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .site-nav ul {
+    flex-direction: row;
+    gap: 12px;
+    background: var(--text);
+    border-radius: 6px;
+  }
+
+  main {
+    display: block;
+  }
+
+  .about.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .courses-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .course-item{
+    min-width: 30rem;
+  }
+
+  .footer-inner {
+    width: 100%;
+  }
+  .copyright {
+    text-align: right;
+  }
+}
