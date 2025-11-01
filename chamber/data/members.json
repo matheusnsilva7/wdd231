@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Sunrise Bakery",
+      "address": "123 Main Street, Springfield, USA",
+      "phone": "555-101-2233",
+      "website": "https://sunrisebakery.com",
+      "image": "store.svg",
+      "membershipLevel": 3,
+      "description": "A family-owned bakery serving fresh bread and pastries since 1980."
+    },
+    {
+      "name": "GreenTech Solutions",
+      "address": "45 Elm Avenue, Springfield, USA",
+      "phone": "555-234-5678",
+      "website": "https://greentechsolutions.com",
+      "image": "store.svg",
+      "membershipLevel": 2,
+      "description": "Providing eco-friendly technology and renewable energy solutions for local businesses."
+    },
+    {
+      "name": "Summit Fitness Center",
+      "address": "789 Oak Boulevard, Springfield, USA",
+      "phone": "555-789-4567",
+      "website": "https://summitfitness.com",
+      "image": "store.svg",
+      "membershipLevel": 1,
+      "description": "A modern gym offering group classes, personal training, and wellness programs."
+    },
+    {
+      "name": "Evergreen Landscaping",
+      "address": "101 Pine Road, Springfield, USA",
+      "phone": "555-333-4444",
+      "website": "https://evergreenlandscaping.com",
+      "image": "store.svg",
+      "membershipLevel": 2,
+      "description": "Professional lawn care, landscape design, and maintenance for residential and commercial clients."
+    },
+    {
+      "name": "Blue Sky Marketing",
+      "address": "567 River Street, Springfield, USA",
+      "phone": "555-654-0987",
+      "website": "https://blueskymarketing.com",
+      "image": "store.svg",
+      "membershipLevel": 3,
+      "description": "Helping local businesses grow through branding, advertising, and digital campaigns."
+    },
+    {
+      "name": "Peak Financial Advisors",
+      "address": "88 Market Plaza, Springfield, USA",
+      "phone": "555-876-3456",
+      "website": "https://peakfinancial.com",
+      "image": "store.svg",
+      "membershipLevel": 1,
+      "description": "Trusted financial guidance and investment planning for individuals and businesses."
+    },
+    {
+      "name": "City View Hotel",
+      "address": "900 Central Avenue, Springfield, USA",
+      "phone": "555-908-1234",
+      "website": "https://cityviewhotel.com",
+      "image": "store.svg",
+      "membershipLevel": 2,
+      "description": "A luxury downtown hotel offering comfortable rooms and exceptional service."
+    }
+  ]
+}
