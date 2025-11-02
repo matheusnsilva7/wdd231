@@ -2,9 +2,13 @@
 const directory = document.querySelector("#directory");
 
 async function getMembers() {
-  const response = await fetch("data/members.json");
-  const data = await response.json();
-  displayMembers(data.members);
+  try {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    displayMembers(data.members);
+  } catch (err) {
+    console.error("Error fetching members:", err);
+  }
 }
 
 function displayMembers(members) {
@@ -12,7 +16,9 @@ function displayMembers(members) {
   members.forEach((member) => {
     const card = document.createElement("section");
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+      <img src="images/${member.image}" alt="${
+      member.name
+    } logo" loading="lazy">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
