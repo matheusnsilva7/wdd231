@@ -3,75 +3,87 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce — Directory</title>
+    <title>Chamber of Commerce — Home</title>
     <meta
       name="description"
-      content="Find and connect with local businesses and organizations in our Chamber of Commerce Directory."
+      content="Welcome to the Chamber of Commerce. Discover events, weather, and featured local businesses."
     />
     <meta name="author" content="Matheus Silva" />
     <link rel="icon" href="./images/mainlogo.svg" />
-
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:title" content="WDD231 Home Webpage" />
-    <meta
-      property="og:description"
-      content="Course home page for Web Certificate courses. Contains course list, filters, and contact links."
-    />
-    <meta
-      property="og:image"
-      content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/date.js"></script>
-    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlights.js"></script>
   </head>
+
   <body>
     <header class="site-header">
       <div class="header-container">
         <div class="header-inner">
-          <a href="/" class="brand" aria-label="Home">
-            <img src="./images/logo.svg" alt="M logo" loading="lazy" />
+          <a href="index.html" class="brand">
+            <img src="./images/logo.svg" alt="Chamber logo" />
             <span class="sitename">Chamber of Commerce</span>
           </a>
 
           <button
             id="navToggle"
             class="nav-toggle"
-            aria-controls="site-nav"
-            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             ☰
           </button>
         </div>
 
-        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <nav id="site-nav" class="site-nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <main class="home-container">
+      <section class="hero">
+        <img src="./images/hero.webp" alt="Timbuktu city" class="hero-img" />
+        <a href="join.html" class="cta">Join the Chamber</a>
+      </section>
 
-    <main class="card">
-      <h2>Business Directory</h2>
-      <div class="view-buttons">
-        <button id="gridView">Grid View</button>
-        <button id="listView">List View</button>
-      </div>
+      <h1>Home</h1>
 
-      <div id="directory" class="grid"></div>
+      <section class="events">
+        <h2>Events</h2>
+        <p>
+          Join us for the annual business networking event this Friday at the
+          Timbuktu Conference Center!
+        </p>
+      </section>
+
+      <section class="weather">
+        <h2>Current Weather</h2>
+        <div id="weatherInfo">
+          <p>Loading current weather...</p>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h2>3-Day Forecast</h2>
+        <div id="forecast"></div>
+      </section>
+
+      <section class="spotlights">
+        <h2>Business Spotlights</h2>
+        <div class="spotlight-container"></div>
+      </section>
     </main>
 
     <footer class="site-footer">
