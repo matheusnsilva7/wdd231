@@ -21,7 +21,7 @@
   bottom: 20%;
   left: 70%;
   transform: translateX(-50%);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
