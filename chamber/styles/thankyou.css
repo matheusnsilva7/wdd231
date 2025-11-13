@@ -1,0 +1,61 @@
+main.card {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+main.card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main.card p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+main.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+main.card li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.05rem;
+}
+
+main.card li strong {
+  color: #333;
+}
+
+main.card a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #003366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+main.card a:hover {
+  background: #005fcc;
+}
+
+@media (max-width: 600px) {
+  main.card {
+    padding: 1.5rem;
+  }
+
+  main.card li {
+    font-size: 1rem;
+  }
+}

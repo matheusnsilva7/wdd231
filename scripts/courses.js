@@ -1,6 +1,8 @@
 const coursesListEl = document.getElementById("coursesList");
 const creditsValueEl = document.getElementById("creditsValue");
 const filterBtns = document.querySelectorAll(".filter-btn");
+const courseDetails = document.querySelector("#course-details");
+
 
 const courses = [
   {
@@ -92,7 +94,7 @@ function renderCourses(filter = "all") {
     item.className = "course-item" + (c.completed ? " completed" : "");
     item.setAttribute("tabindex", "0");
     item.innerHTML = `
-        <div class="course-info">
+        <div class="course-info" id="${c.number}">
           <strong>${
             c.title
           }</strong><div class="muted">${c.subject.toUpperCase()}</div>
@@ -109,6 +111,12 @@ function renderCourses(filter = "all") {
     0
   );
   creditsValueEl.textContent = String(totalCredits);
+
+  document.querySelectorAll(".course-info").forEach((e) =>
+    e.addEventListener("click", (i) => {
+      displayCourseDetails(courses.find((z) => z.number === +e.id));
+    })
+  );
 }
 
 filterBtns.forEach((btn) => {
@@ -125,3 +133,21 @@ renderCourses("all");
 
 const defaultBtn = document.querySelector('.filter-btn[data-filter="all"]');
 if (defaultBtn) defaultBtn.classList.add("active");
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+  `;
+  courseDetails.showModal();
+
+  document.querySelector("#closeModal").addEventListener("click", () => {
+    courseDetails.close();
+  });
+}

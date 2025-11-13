@@ -1,4 +1,3 @@
-// Fetch and Display Members
 const directory = document.querySelector("#directory");
 
 async function getMembers() {
@@ -42,3 +41,4 @@ listBtn.addEventListener("click", () =>
   directory.classList.replace("grid", "list")
 );
 getMembers();
+  
