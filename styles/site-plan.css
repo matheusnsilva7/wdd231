@@ -1,0 +1,43 @@
+:root {
+  --primary: #0b6efd; /* blue */
+  --secondary: #ffb703; /* warm accent */
+  --dark: #1a1a1a;
+  --light: #f7f7f7;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--light);
+  margin: 0;
+  padding: 20px;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+header,
+section {
+  margin-bottom: 30px;
+}
+
+code {
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.wireframe {
+  background: white;
+  padding: 15px;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  white-space: pre;
+  font-family: monospace;
+}
