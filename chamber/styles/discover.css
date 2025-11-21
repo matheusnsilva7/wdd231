@@ -90,26 +90,10 @@
 }
 
 .discover-card h2 {
-  grid-area: elem1;
-}
-.discover-card p {
-  grid-area: elem4;
-}
-.discover-card img {
-  grid-area: elem2;
-}
-
-.discover-card address {
-  grid-area: elem3;
-}
-.discover-card button {
-  grid-area: elem5;
-}
-
-.discover-card h2 {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
   color: var(--primary-color);
+  grid-area: elem1;
 }
 
 .discover-card img {
@@ -119,16 +103,19 @@
   display: block;
   object-fit: cover;
   margin: 0 auto;
+  grid-area: elem2;
 }
 
 .discover-card address {
   font-style: normal;
   color: #555;
   margin-bottom: 0.5rem;
+  grid-area: elem3;
 }
 
 .discover-card p {
   margin-bottom: 1rem;
+  grid-area: elem4;
 }
 
 .discover-card button {
@@ -142,6 +129,7 @@
   margin: 0 auto;
   transition: background 0.3s ease;
   width: 100%;
+  grid-area: elem3;
 }
 
 .discover-card button:hover {
