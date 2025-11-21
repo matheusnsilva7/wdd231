@@ -9,7 +9,7 @@
   padding: 2rem 1rem;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: clamp(1.6rem, 2.5vw, 2.4rem);
   color: var(--primary-color);
 }
@@ -35,8 +35,6 @@
   display: grid;
   gap: 1.5rem;
   margin-top: 2.5rem;
-}
-.discover-grid {
   grid-template-columns: 1fr;
   grid-template-areas:
     "card1"
