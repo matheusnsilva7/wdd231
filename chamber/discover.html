@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce — Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber of Commerce — Directory</title>
     <meta
       name="description"
-      content="Welcome to the Chamber of Commerce. Discover events, weather, and featured local businesses."
+      content="Find and connect with local businesses and organizations in our Chamber of Commerce Directory."
     />
     <meta name="author" content="Matheus Silva" />
-
-    <meta property="og:title" content="Timbuktu Chamber of Commerce | Connecting Local Businesses">
-    <meta property="og:description" content="Join the Timbuktu Chamber of Commerce to connect, grow, and thrive with local businesses. Discover opportunities, events, and community updates." />
-    <meta property="og:image" content="https://matheusnsilva7.github.io/wdd231/chamber/images/hero.webp">
-    <meta property="og:url" content="https://matheusnsilva7.github.io/wdd231/chamber/index.html">
-
     <link rel="icon" href="./images/mainlogo.svg" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/home.css">
-    
+
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="WDD231 Home Webpage" />
+    <meta
+      property="og:description"
+      content="Course home page for Web Certificate courses. Contains course list, filters, and contact links."
+    />
+    <meta
+      property="og:image"
+      content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,71 +30,65 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/discover.css" />
+
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/date.js"></script>
-    <script defer src="scripts/weather.js"></script>
-    <script defer src="scripts/spotlights.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
   </head>
-
   <body>
     <header class="site-header">
       <div class="header-container">
         <div class="header-inner">
-          <a href="index.html" class="brand">
-            <img src="./images/logo.svg" alt="Chamber logo" />
+          <a href="/" class="brand" aria-label="Home">
+            <img src="./images/logo.svg" alt="M logo" loading="lazy" />
             <span class="sitename">Chamber of Commerce</span>
           </a>
 
           <button
             id="navToggle"
             class="nav-toggle"
+            aria-controls="site-nav"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             ☰
           </button>
         </div>
 
-        <nav id="site-nav" class="site-nav">
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="home-container">
+
+    <main class="wrap">
       <section class="hero">
-        <img src="./images/hero.webp" alt="Timbuktu city" class="hero-img" />
-        <a href="join.html" class="cta">Join the Chamber</a>
-      </section>
-
-      <h1>Home</h1>
-
-      <section class="events">
-        <h2>Events</h2>
-        <p>
-          Join us for the annual business networking event this Friday at the
-          Timbuktu Conference Center!
+        <h2>Discover the best of our area</h2>
+        <p class="lead">
+          A quick guide to the attractions, neighborhoods, and experiences that
+          make our city a great place for visitors and businesses.
         </p>
+        <div
+          class="visit-message"
+          id="visitMessage"
+          role="status"
+          aria-live="polite"
+        ></div>
       </section>
 
-      <section class="weather">
-        <h2>Current Weather</h2>
-        <div id="weatherInfo">
-          <p>Loading current weather...</p>
-        </div>
-      </section>
-
-      <section class="forecast">
-        <h2>3-Day Forecast</h2>
-        <div id="forecast"></div>
-      </section>
-
-      <section class="spotlights">
-        <h2>Business Spotlights</h2>
-        <div class="spotlight-container"></div>
+      <section
+        class="discover-grid"
+        id="discoverGrid"
+        aria-label="Places of interest"
+      >
+        <!-- Cards are injected here by JS -->
       </section>
     </main>
 
