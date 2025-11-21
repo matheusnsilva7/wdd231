@@ -17,7 +17,7 @@
 .lead {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-   color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .visit-message {
@@ -80,6 +80,30 @@
   gap: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "elem1"
+    "elem2"
+    "elem3"
+    "elem4"
+    "elem5";
+}
+
+.discover-card h2 {
+  grid-area: elem1;
+}
+.discover-card p {
+  grid-area: elem4;
+}
+.discover-card img {
+  grid-area: elem2;
+}
+
+.discover-card address {
+  grid-area: elem3;
+}
+.discover-card button {
+  grid-area: elem5;
 }
 
 .discover-card h2 {
@@ -133,22 +157,6 @@
       "elem2  elem3"
       "elem2  elem4"
       "elem5  elem5";
-  }
-  .discover-card h2 {
-    grid-area: elem1;
-  }
-  .discover-card p {
-    grid-area: elem4;
-  }
-  .discover-card img {
-    grid-area: elem2;
-  }
-
-  .discover-card address {
-    grid-area: elem3;
-  }
-  .discover-card button {
-    grid-area: elem5;
   }
 }
 @media (min-width: 1025px) {
