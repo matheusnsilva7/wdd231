@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sports — Sports Explorer</title>
+    <meta
+      name="description"
+      content="Search and browse many sports, view details, images and additional information."
+    />
+    <meta name="author" content="Matheus Silva" />
+    <meta property="og:title" content="Sports — Sports Explorer" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">SPORTS EXPLORER</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation"
+        >
+          <span class="bar"></span>
+        </button>
+
+        <nav id="mainNav2" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html" class="active" >Sports</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="list-controls">
+        <h1>All Sports</h1>
+        <div class="controls-row">
+          <label>
+            <span class="sr-only">Search sports</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search sports by name or format"
+            />
+          </label>
+          <select id="filterSelect" aria-label="Filter by format">
+            <option value="">All formats</option>
+            <option value="Team">Team</option>
+            <option value="Individual">Individual</option>
+            <option value="Racquet">Racquet</option>
+            <option value="Water">Water</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="sports-grid" id="sportsGrid" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Sports Explorer.</p>
+        <p>
+          <a
+            href="https://youtu.be/your-video-id"
+            target="_blank"
+            rel="noopener"
+            >Project demo video</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <div
+      id="detailModal"
+      class="modal"
+      role="dialog"
+      aria-hidden="true"
+      aria-labelledby="detailTitle"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 id="detailTitle">Sport details</h3>
+          <button class="modal-close" data-close aria-label="Close details">
+            Close
+          </button>
+        </div>
+        <div class="modal-body" id="detailContent"></div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

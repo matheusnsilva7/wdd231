@@ -1,0 +1,17 @@
+[
+  {"id":"1","name":"Basketball","format":"Team","description":"A team sport played by two teams of five players on a rectangular court.","popularity":"High"},
+  {"id":"2","name":"Soccer","format":"Team","description":"The world's most popular sport. Two teams compete to score goals by getting the ball into the opposing net.","popularity":"Very High"},
+  {"id":"3","name":"Cricket","format":"Team","description":"A bat-and-ball game played between two teams of eleven players on a field.","popularity":"High"},
+  {"id":"4","name":"Tennis","format":"Racquet","description":"A racquet sport that can be played individually against a single opponent or between two teams of two players.","popularity":"High"},
+  {"id":"5","name":"Table Tennis","format":"Racquet","description":"A fast-paced indoor racquet sport played on a hard table divided by a net.","popularity":"Medium"},
+  {"id":"6","name":"Swimming","format":"Water","description":"A sport that involves moving through water using the limbs.","popularity":"High"},
+  {"id":"7","name":"Rowing","format":"Water","description":"A sport in which athletes race boats using oars on water.","popularity":"Medium"},
+  {"id":"8","name":"Cycling","format":"Individual","description":"Competitive cycling includes different disciplines, such as road racing and track racing.","popularity":"High"},
+  {"id":"9","name":"Boxing","format":"Individual","description":"A combat sport where two people throw punches at each other for a predetermined set of time in a boxing ring.","popularity":"High"},
+  {"id":"10","name":"Rugby","format":"Team","description":"A contact team sport which originated in England, with two teams competing to score tries.","popularity":"Medium"},
+  {"id":"11","name":"Lacrosse","format":"Team","description":"A team sport played with a small rubber ball and a long-handled stick called a crosse or lacrosse stick.","popularity":"Low"},
+  {"id":"12","name":"Badminton","format":"Racquet","description":"A racquet sport played using racquets to hit a shuttlecock across a net.","popularity":"High"},
+  {"id":"13","name":"Surfing","format":"Water","description":"A surface water sport in which the wave rider rides on the forward or deep face of a moving wave.","popularity":"Medium"},
+  {"id":"14","name":"Gymnastics","format":"Individual","description":"A sport that includes exercises requiring balance, strength, flexibility, agility, coordination and endurance.","popularity":"High"},
+  {"id":"15","name":"Archery","format":"Individual","description":"The sport, practice, or skill of using a bow to shoot arrows at a target.","popularity":"Medium"}
+]

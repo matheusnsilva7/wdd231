@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Sports Explorer</title>
+    <meta
+      name="description"
+      content="Tell us your favorite sport or ask a question."
+    />
+    <meta name="author" content="Matheus Silva" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Sports Explorer home"
+          >SPORTS EXPLORER</a
+        >
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation"
+        >
+          <span class="bar"></span>
+        </button>
+
+        <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="about.html" hidden>About</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Contact</h1>
+      <p>
+        Share your favorite sport or ask a question — we'll save it for the
+        project demo.
+      </p>
+
+      <form id="contactForm" method="get" action="form-action.html">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required />
+
+        <label for="favorite">Favorite Sport</label>
+        <input
+          id="favorite"
+          name="favorite"
+          type="text"
+          placeholder="e.g. Lacrosse"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Sports Explorer.</p>
+        <p>
+          <a
+            href="https://youtu.be/your-video-id"
+            target="_blank"
+            rel="noopener"
+            >Project demo video</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

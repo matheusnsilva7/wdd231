@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Form Submission — Sports Explorer</title>
+    <meta name="description" content="Form submission results" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Sports Explorer home"
+          >SPORTS EXPLORER</a
+        >
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation"
+        >
+          <span class="bar"></span>
+        </button>
+
+        <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="about.html" hidden>About</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Thanks for contacting Sports Explorer</h1>
+      <p>Your message was received. Below is the data submitted.</p>
+
+      <div class="submitted-data">
+        <pre id="formDataPre">Loading...</pre>
+      </div>
+
+      <p><a href="index.html">Return to home</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> Sports Explorer.
+        </p>
+        <p>
+          <a
+            href="https://youtu.be/your-video-id"
+            target="_blank"
+            rel="noopener"
+            >Project demo video</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

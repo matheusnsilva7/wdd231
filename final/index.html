@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sports Explorer — Discover New Sports</title>
+    <meta
+      name="description"
+      content="Sports Explorer helps you discover new sports, learn fun facts, and stay active. Dynamic sports data fetched from TheSportsDB (with local fallback)."
+    />
+    <meta name="author" content="Matheus Silva" />
+
+    <meta property="og:title" content="Sports Explorer — Discover New Sports" />
+    <meta
+      property="og:description"
+      content="Discover new sports, images, and facts. Built for WDD231."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/og-sports-explorer.png" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Sports Explorer home"
+          >SPORTS EXPLORER</a
+        >
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="mainNav"
+            aria-label="Open navigation"
+          >
+            <span class="bar"></span>
+          </button>
+
+
+        <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active" >Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="about.html" hidden>About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          src="images/hero-placeholder.webp"
+          alt="People playing diverse sports"
+          class="hero-img"
+          loading="lazy"
+        />
+        <h1 id="hero-title">Discover New Sports Today</h1>
+        <p class="lead">
+          Sports Explorer helps you discover new sports, learn fun facts, and
+          stay active.
+        </p>
+        <p>
+          <a class="btn primary" href="sports.html">Explore Sports</a>
+          <button class="btn" id="openFavoritesBtn" aria-haspopup="dialog">
+            View Favorites
+          </button>
+        </p>
+      </section>
+
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          Sports Explorer helps you discover new sports, learn fun facts, and
+          understand what you need to get started. Whether you're looking for
+          rules, equipment, or the history behind a sport, Sports Explorer gives
+          you quick and easy access to everything you need.
+        </p>
+      </section>
+
+      <section aria-labelledby="featured-heading" class="featured">
+        <h2 id="featured-heading">Featured Sports</h2>
+        <div id="featuredContainer" class="card-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> Sports Explorer.
+        </p>
+        <p>
+          <a
+            href="https://youtu.be/your-video-id"
+            target="_blank"
+            rel="noopener"
+            >Project demo video</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <div
+      id="favoritesModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="favoritesTitle"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 id="favoritesTitle">Your Favorite Sports</h3>
+          <button class="modal-close" data-close aria-label="Close favorites">
+            Close
+          </button>
+        </div>
+        <div class="modal-body" id="favoritesContent"></div>
+      </div>
+    </div>
+
+    <div
+      id="detailModal"
+      class="modal"
+      role="dialog"
+      aria-hidden="true"
+      aria-labelledby="detailTitle"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 id="detailTitle">Sport details</h3>
+          <button class="modal-close" data-close aria-label="Close details">
+            Close
+          </button>
+        </div>
+        <div class="modal-body" id="detailContent"></div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
