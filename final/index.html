@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sports Explorer — Discover New Sports</title>
     <meta
       name="description"
       content="Sports Explorer helps you discover new sports, learn fun facts, and stay active. Dynamic sports data fetched from TheSportsDB (with local fallback)."
     />
     <meta name="author" content="Matheus Silva" />
+    <link rel="icon" href="./images/logo.svg" />
 
     <meta property="og:title" content="Sports Explorer — Discover New Sports" />
     <meta
@@ -17,8 +18,19 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/og-sports-explorer.png" />
+    <meta
+      property="og:url"
+      content="https://matheusnsilva7.github.io/wdd231/final/index.html"
+    />
+    <meta property="og:type" content="Website" />
 
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header class="site-header">
@@ -27,19 +39,18 @@
           >SPORTS EXPLORER</a
         >
 
-          <button
-            class="nav-toggle"
-            id="navToggle"
-            aria-expanded="false"
-            aria-controls="mainNav"
-            aria-label="Open navigation"
-          >
-            <span class="bar"></span>
-          </button>
-
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation"
+        >
+          <span class="bar"></span>
+        </button>
 
         <nav id="mainNav" class="main-nav" aria-label="Main navigation">
-          <a href="index.html" class="active" >Home</a>
+          <a href="index.html" class="active">Home</a>
           <a href="sports.html">Sports</a>
           <a href="about.html" hidden>About</a>
           <a href="contact.html">Contact</a>
@@ -86,9 +97,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>
-          &copy; <span id="year"></span> Sports Explorer.
-        </p>
+        <p>&copy; <span id="year"></span> Sports Explorer.</p>
         <p>
           <a
             href="https://youtu.be/your-video-id"

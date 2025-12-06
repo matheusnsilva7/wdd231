@@ -284,30 +284,6 @@ h1 {
   margin: 1rem 0;
 }
 
-@media (max-width: 760px) {
-  .main-nav {
-    position: absolute;
-    right: 1rem;
-    top: 64px;
-    background: white;
-    flex-direction: column;
-    padding: 0.5rem;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    display: none;
-  }
-  .nav-toggle {
-    display: flex;
-  }
-  .main-nav.show {
-    display: flex;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-}
-
 a:focus,
 button:focus,
 input:focus {
